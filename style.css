@@ -1,0 +1,242 @@
+/* Raymond Amador — portfolio landing page.
+   Shares the visual identity of the course books (ecp/style.py):
+   Fraunces (display), Source Serif 4 (body), JetBrains Mono (labels),
+   ink #16213e + amber #c0851a on parchment #faf7f0. Light and dark. */
+
+:root {
+  --ink:        #16213e;   /* primary text / navy        */
+  --ink-soft:   #46506b;   /* secondary text, metadata   */
+  --accent:     #c0851a;   /* warm amber                 */
+  --accent-ink: #16213e;   /* amber link hover -> ink    */
+  --paper:      #faf7f0;   /* parchment background       */
+  --hairline:   #dcd6c8;   /* subtle dividers            */
+
+  --display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --body:    'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+  --mono:    'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --measure: 40rem;        /* comfortable reading width   */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:        #ece6d8;   /* warm near-parchment text  */
+    --ink-soft:   #9aa0b4;
+    --accent:     #e0a93f;   /* brightened amber for dark */
+    --accent-ink: #ece6d8;
+    --paper:      #11182b;   /* deep ink background       */
+    --hairline:   #2b3450;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: clamp(3rem, 9vw, 7rem) clamp(1.4rem, 6vw, 3rem) 4rem;
+}
+
+/* ---- shared editorial label (the book "eyebrow") --------------------- */
+.eyebrow {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1.1rem;
+}
+
+/* ---- masthead ------------------------------------------------------- */
+.masthead h1 {
+  font-family: var(--display);
+  font-variation-settings: 'opsz' 144;
+  font-weight: 900;
+  font-size: clamp(2.6rem, 8vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  margin: 0 0 1.5rem;
+}
+
+.lead {
+  font-size: clamp(1.1rem, 2.4vw, 1.3rem);
+  line-height: 1.62;
+  color: var(--ink);
+  margin: 0 0 2rem;
+  max-width: 36rem;
+}
+.lead em { font-style: italic; }
+.nowrap { white-space: nowrap; }
+
+/* ---- call-to-action button ------------------------------------------ */
+.actions { margin: 0; }
+.btn {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 0.7em 1.2em;
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  transition: background-color .18s ease, color .18s ease;
+}
+.btn:hover, .btn:focus-visible {
+  background: var(--ink);
+  color: var(--paper);
+  outline: none;
+}
+
+/* ---- rules ---------------------------------------------------------- */
+.rule {
+  border: 0;
+  height: 1px;
+  background: var(--hairline);
+  margin: clamp(3rem, 7vw, 4.5rem) 0;
+}
+
+/* ---- selected work -------------------------------------------------- */
+.section-note {
+  color: var(--ink-soft);
+  margin: -0.4rem 0 2.4rem;
+  max-width: 34rem;
+}
+
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.work + .work { margin-top: 2.8rem; }
+
+.work-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.work-title {
+  font-family: var(--display);
+  font-variation-settings: 'opsz' 72;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.6vw, 1.95rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+.work-title a {
+  color: var(--ink);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  transition: background-size .25s ease;
+}
+.work-title a:hover, .work-title a:focus-visible {
+  background-size: 100% 2px;
+  outline: none;
+}
+.work-year {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  flex: none;
+}
+.work-desc {
+  color: var(--ink-soft);
+  margin: 0.7rem 0 0.6rem;
+  max-width: 36rem;
+}
+
+.work-links {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+.work-links a { color: var(--accent); text-decoration: none; }
+.work-links a:hover { color: var(--accent-ink); text-decoration: underline; }
+.work-links .primary { font-weight: 600; }
+.work-links .sep { color: var(--hairline); margin: 0 0.55em; }
+
+/* ---- education ------------------------------------------------------ */
+.edu-list { list-style: none; margin: 0; padding: 0; }
+.edu + .edu { margin-top: 1.5rem; }
+.edu-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.deg {
+  font-family: var(--display);
+  font-variation-settings: 'opsz' 40;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+}
+.inst {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+  text-align: right;
+}
+.edu-note { color: var(--ink-soft); margin: 0.35rem 0 0; font-size: 0.97rem; }
+.edu-note em { font-style: italic; }
+
+/* ---- elsewhere / colophon ------------------------------------------ */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.6rem;
+  margin-bottom: 2.2rem;
+}
+.links a {
+  font-family: var(--body);
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--accent);
+  padding-bottom: 1px;
+  transition: color .18s ease, border-color .18s ease;
+}
+.links a:hover, .links a:focus-visible {
+  color: var(--accent);
+  outline: none;
+}
+
+.fineprint {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ---- focus visibility for keyboard users --------------------------- */
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 1px; }
+
+@media (max-width: 30rem) {
+  .work-top { flex-direction: column; gap: 0.2rem; }
+}
