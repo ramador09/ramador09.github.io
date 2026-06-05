@@ -152,9 +152,22 @@ main {
 
 .work-top {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+.work-head {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.work-logo {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 9px;
 }
 .work-title {
   font-family: var(--display);
@@ -236,18 +249,27 @@ main {
   margin-bottom: 2.2rem;
 }
 .links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
   font-family: var(--body);
   font-size: 1.05rem;
   color: var(--ink);
   text-decoration: none;
-  border-bottom: 1.5px solid var(--accent);
-  padding-bottom: 1px;
-  transition: color .18s ease, border-color .18s ease;
+  transition: color .18s ease;
 }
 .links a:hover, .links a:focus-visible {
   color: var(--accent);
   outline: none;
 }
+.links .icon {
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+  flex: none;
+  opacity: 0.85;
+}
+.links a:hover .icon { opacity: 1; }
 
 .fineprint {
   font-family: var(--mono);
