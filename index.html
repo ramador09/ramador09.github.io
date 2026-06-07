@@ -7,7 +7,6 @@
   <meta name="description" content="Raymond Amador — computational physicist (Dr. sc. ETH Zürich), and author of open, visual course companions in computational science.">
   <meta name="author" content="Raymond Amador">
 
-  <!-- Open Graph / social preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Raymond Amador">
   <meta property="og:description" content="Computational physicist (Dr. sc. ETH Zürich), and author of open, visual course companions in computational science.">
@@ -21,157 +20,121 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 
-  <!-- Minimal inline favicon: an amber double-well / wave mark on ink -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2316213e'/><path d='M4 20 C9 20 9 11 16 11 C23 11 23 20 28 20' fill='none' stroke='%23c0851a' stroke-width='2.5' stroke-linecap='round'/></svg>">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
 
-    <!-- ============================ MASTHEAD ============================ -->
-    <header class="masthead">
-      <div class="masthead-text">
-        <p class="eyebrow">Dr.&nbsp;sc.&nbsp;ETH&nbsp;Zürich</p>
-        <h1>Raymond Amador</h1>
+  <!-- ============================== TOP BAR ============================= -->
+  <header class="topbar">
+    <a class="wordmark" href="https://ramador09.github.io/">RA</a>
+    <nav class="contact" aria-label="Contact and profiles">
+      <a href="https://www.linkedin.com/in/ramador09/" aria-label="LinkedIn">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.002z"/></svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=wbPjP08AAAAJ&amp;hl=de" aria-label="Google Scholar">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+      </a>
+      <a href="https://github.com/ramador09" aria-label="GitHub">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a id="email-link" href="#" aria-label="Email">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a class="cv-link" href="cv.pdf">CV <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <!-- =============================== STAGE ============================= -->
+  <main class="stage">
+    <div class="grid">
+
+      <!-- ---- identity (left) ---- -->
+      <section class="identity">
+        <img class="portrait" src="portrait.jpg" width="640" height="640" alt="Portrait of Raymond Amador">
+        <div>
+          <p class="eyebrow">Dr.&nbsp;sc.&nbsp;ETH&nbsp;Zürich</p>
+          <h1>Raymond Amador</h1>
+        </div>
         <p class="lead">
           Computational physicist. PhD from ETH&nbsp;Zürich and Empa. I build open-course
-          materials for computational science, and studied chiral reactions on surfaces with
-          enhanced-sampling molecular dynamics and machine-learned interatomic potentials.
+          materials for computational science, and studied chiral reactions on surfaces
+          with enhanced-sampling molecular dynamics and machine-learned interatomic
+          potentials.
         </p>
-        <p class="actions">
-          <a class="btn" href="cv.pdf">Curriculum&nbsp;Vitae <span aria-hidden="true">↗</span></a>
-        </p>
-      </div>
-      <img class="portrait" src="portrait.jpg" width="640" height="640"
-           alt="Portrait of Raymond Amador" loading="eager">
-    </header>
+      </section>
 
-    <hr class="rule">
+      <!-- ---- work + education (right) ---- -->
+      <section class="detail">
 
-    <!-- ========================== SELECTED WORK ========================= -->
-    <section class="works" aria-labelledby="work-heading">
-      <p class="eyebrow" id="work-heading">Selected work</p>
-      <p class="section-note">
-        Free, open course companions — each notebook reviews the theory, builds it in
-        Python, and validates the result against an independent truth.
-      </p>
+        <div class="block">
+          <p class="eyebrow">Selected work</p>
+          <ol class="work-list">
+            <li class="work">
+              <div class="work-head">
+                <img class="work-logo" src="ecp-logo.svg" alt="" width="64" height="64">
+                <h2 class="work-title">
+                  <a href="https://ramador09.github.io/elementary-computational-physics-public/">Elementary Computational Physics</a>
+                </h2>
+              </div>
+              <p class="work-desc">
+                Physics by computation and visualisation — mechanics to quantum and
+                statistical mechanics, every result animated and validated.
+                <a class="inline-link" href="https://ramador09.github.io/elementary-computational-physics-public/">Visit&nbsp;<span aria-hidden="true">↗</span></a>
+              </p>
+            </li>
+            <li class="work">
+              <div class="work-head">
+                <img class="work-logo" src="mmm-logo.svg" alt="" width="64" height="64">
+                <h2 class="work-title">
+                  <a href="https://ramador09.github.io/molecular-materials-modelling-public/">Molecular and Materials Modelling</a>
+                </h2>
+              </div>
+              <p class="work-desc">
+                The ETH&nbsp;Zürich graduate course I taught (2021&ndash;2023), rebuilt as
+                interactive notebooks on the course&rsquo;s own real simulation data.
+                <a class="inline-link" href="https://ramador09.github.io/molecular-materials-modelling-public/">Visit&nbsp;<span aria-hidden="true">↗</span></a>
+              </p>
+            </li>
+          </ol>
+        </div>
 
-      <ol class="work-list">
+        <div class="block">
+          <p class="eyebrow">Education</p>
+          <ul class="edu-list">
+            <li class="edu">
+              <div class="edu-row">
+                <span class="deg">Doctor of Sciences</span>
+                <span class="inst">ETH&nbsp;Zürich &amp; Empa</span>
+              </div>
+              <p class="edu-note"><em>Enhanced sampling of chiral reactions on chiral surfaces</em></p>
+            </li>
+            <li class="edu">
+              <div class="edu-row">
+                <span class="deg">M.Sc. Physics</span>
+                <span class="inst">Humboldt-Universität zu Berlin</span>
+              </div>
+              <p class="edu-note"><em>Electronic structure and optical properties of Na<sub>2</sub>KSb and NaK<sub>2</sub>Sb for photocathodes</em></p>
+            </li>
+            <li class="edu">
+              <div class="edu-row">
+                <span class="deg">B.Sc. Physics</span>
+                <span class="inst">University of Miami</span>
+              </div>
+              <p class="edu-note"><em>The DXL sounding-rocket mission to study solar-wind charge exchange</em></p>
+            </li>
+          </ul>
+        </div>
 
-        <li class="work">
-          <div class="work-top">
-            <div class="work-head">
-              <img class="work-logo" src="ecp-logo.svg" alt="" width="64" height="64">
-              <h2 class="work-title">
-                <a href="https://ramador09.github.io/elementary-computational-physics-public/">Elementary Computational Physics</a>
-              </h2>
-            </div>
-            <span class="work-year">2026</span>
-          </div>
-          <p class="work-desc">
-            A Python notebook companion that teaches physics by computation and
-            visualisation — across mechanics, electrodynamics, thermodynamics, quantum
-            and statistical mechanics — following the arc of Nolting&rsquo;s
-            <em>Theoretische&nbsp;Physik</em>. Every result is animated and validated
-            against a conservation law, an analytic limit, or a known spectrum.
-          </p>
-          <p class="work-links">
-            <a class="primary" href="https://ramador09.github.io/elementary-computational-physics-public/">Live&nbsp;site <span aria-hidden="true">↗</span></a>
-            <span class="sep">/</span>
-            <a href="https://github.com/ramador09/elementary-computational-physics-public">Source</a>
-          </p>
-        </li>
-
-        <li class="work">
-          <div class="work-top">
-            <div class="work-head">
-              <img class="work-logo" src="mmm-logo.svg" alt="" width="64" height="64">
-              <h2 class="work-title">
-                <a href="https://ramador09.github.io/molecular-materials-modelling-public/">Molecular and Materials Modelling</a>
-              </h2>
-            </div>
-            <span class="work-year">2026</span>
-          </div>
-          <p class="work-desc">
-            The ETH&nbsp;Zürich graduate course I taught (2021&ndash;2023), rebuilt as
-            interactive notebooks — Monte&nbsp;Carlo, molecular dynamics, electronic
-            structure, crystals and surfaces, reactions and free energy — each exercise
-            worked on the course&rsquo;s own real simulation data, from cube files to
-            LAMMPS and CP2K output.
-          </p>
-          <p class="work-links">
-            <a class="primary" href="https://ramador09.github.io/molecular-materials-modelling-public/">Live&nbsp;site <span aria-hidden="true">↗</span></a>
-            <span class="sep">/</span>
-            <a href="https://github.com/ramador09/molecular-materials-modelling-public">Source</a>
-          </p>
-        </li>
-
-      </ol>
-    </section>
-
-    <hr class="rule">
-
-    <!-- ============================ EDUCATION ========================== -->
-    <section class="education" aria-labelledby="edu-heading">
-      <p class="eyebrow" id="edu-heading">Education</p>
-      <ul class="edu-list">
-        <li class="edu">
-          <div class="edu-row">
-            <span class="deg">Doctor of Sciences</span>
-            <span class="inst">ETH&nbsp;Zürich &amp; Empa</span>
-          </div>
-          <p class="edu-note">Dissertation — <em>Enhanced sampling of chiral reactions on chiral surfaces</em></p>
-        </li>
-        <li class="edu">
-          <div class="edu-row">
-            <span class="deg">M.Sc. Physics</span>
-            <span class="inst">Humboldt-Universität zu Berlin</span>
-          </div>
-          <p class="edu-note">Thesis — <em>The electronic structure and optical properties of Na<sub>2</sub>KSb and NaK<sub>2</sub>Sb for photocathode applications</em></p>
-        </li>
-        <li class="edu">
-          <div class="edu-row">
-            <span class="deg">B.Sc. Physics</span>
-            <span class="inst">University of Miami</span>
-          </div>
-          <p class="edu-note">Thesis — <em>The DXL sounding-rocket mission to study solar-wind charge exchange</em></p>
-        </li>
-      </ul>
-    </section>
-
-    <hr class="rule">
-
-    <!-- ============================= ELSEWHERE ========================= -->
-    <footer class="colophon" aria-labelledby="elsewhere-heading">
-      <p class="eyebrow" id="elsewhere-heading">Elsewhere</p>
-      <nav class="links">
-        <a href="https://www.linkedin.com/in/ramador09/">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.002z"/></svg>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://scholar.google.com/citations?user=wbPjP08AAAAJ&amp;hl=de">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-          <span>Google&nbsp;Scholar</span>
-        </a>
-        <a href="https://github.com/ramador09">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          <span>GitHub</span>
-        </a>
-        <a id="email-link" href="#">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          <span>Email</span>
-        </a>
-      </nav>
-      <p class="fineprint">
-        &copy; 2026 Raymond Amador &middot; Zürich, Switzerland
-      </p>
-    </footer>
-
+      </section>
+    </div>
   </main>
 
-  <!-- Email assembled at runtime so the address never appears in the page source
-       (basic obfuscation against address-harvesting scrapers). -->
+  <footer class="footer">
+    <p class="fineprint">&copy; 2026 Raymond Amador &middot; Zürich, Switzerland</p>
+  </footer>
+
   <script>
     (function () {
       var user = "ray", domain = "ramador.me";
