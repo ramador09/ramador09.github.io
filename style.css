@@ -6,7 +6,8 @@
 :root {
   --ink:        #16213e;
   --ink-soft:   #46506b;
-  --accent:     #c0851a;
+  --accent:     #c0851a;   /* brand amber: icons, underlines, decoration */
+  --accent-text:#946011;   /* deeper amber for small TEXT — WCAG AA on parchment */
   --paper:      #faf7f0;
   --hairline:   #dcd6c8;
 
@@ -20,6 +21,7 @@
     --ink:      #ece6d8;
     --ink-soft: #9aa0b4;
     --accent:   #e0a93f;
+    --accent-text:#e0a93f;   /* bright amber already passes on dark ink */
     --paper:    #11182b;
     --hairline: #2b3450;
   }
@@ -50,7 +52,7 @@ body {
   font-size: 0.7rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
   margin: 0 0 0.9rem;
 }
 
@@ -178,7 +180,7 @@ body {
   font-size: 0.72rem;
   letter-spacing: 0.04em;
   white-space: nowrap;
-  color: var(--accent);
+  color: var(--accent-text);
   text-decoration: none;
   font-weight: 600;
 }
