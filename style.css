@@ -82,6 +82,8 @@ body {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
   padding: 0.45em 0.9em;
   border: 1.5px solid var(--ink);
   border-radius: 2px;
