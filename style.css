@@ -71,13 +71,22 @@ body {
   line-height: 0;
 }
 .wordmark .mark {
-  height: 26px;
-  width: auto;
+  height: 34px;
+  width: 34px;
   display: block;
   transition: opacity .18s ease;
 }
+/* The personal mark (double pendulum) adapts to the theme:
+   light = thin ink outline frame + ink glyph; the amber bob stays amber. */
+.wordmark .frame  { fill: none; stroke: var(--ink); stroke-width: 2; }
+.wordmark .struct { fill: var(--ink); stroke: var(--ink); }
+.wordmark .amber  { fill: var(--accent); stroke: var(--accent); }
 .wordmark:hover .mark,
 .wordmark:focus-visible .mark { opacity: 0.78; }
+@media (prefers-color-scheme: dark) {
+  /* dark = keep a filled badge (brand ink), glyph in the light foreground */
+  .wordmark .frame { fill: #16213e; stroke: none; }
+}
 .contact { display: flex; align-items: center; gap: clamp(0.9rem, 2.4vw, 1.5rem); }
 .contact a { color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; transition: color .18s ease; }
 .contact a:hover, .contact a:focus-visible { color: var(--accent); outline: none; }
