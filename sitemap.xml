@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap index for ramador.me: the landing page plus each course site's own
+     sitemap. Submit this single URL to Google Search Console to cover them all. -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://ramador.me/sitemap-home.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://ramador.me/bash-primer-public/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://ramador.me/elementary-computational-physics-public/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://ramador.me/molecular-materials-modelling-public/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
