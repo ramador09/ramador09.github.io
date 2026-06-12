@@ -65,14 +65,19 @@ body {
   border-bottom: 1px solid var(--hairline);
 }
 .wordmark {
-  font-family: var(--display);
-  font-variation-settings: 'opsz' 40;
-  font-weight: 900;
-  font-size: 1.25rem;
-  letter-spacing: 0.02em;
-  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+  line-height: 0;
 }
+.wordmark .mark {
+  height: 26px;
+  width: auto;
+  display: block;
+  transition: opacity .18s ease;
+}
+.wordmark:hover .mark,
+.wordmark:focus-visible .mark { opacity: 0.78; }
 .contact { display: flex; align-items: center; gap: clamp(0.9rem, 2.4vw, 1.5rem); }
 .contact a { color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; transition: color .18s ease; }
 .contact a:hover, .contact a:focus-visible { color: var(--accent); outline: none; }
