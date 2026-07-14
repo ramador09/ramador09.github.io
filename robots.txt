@@ -1,0 +1,6 @@
+# ramador.me — personal site and computational-science course companions.
+# Search engines are welcome to crawl and index everything.
+User-agent: *
+Allow: /
+
+Sitemap: https://ramador.me/sitemap.xml
