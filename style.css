@@ -192,11 +192,11 @@ body {
   font-family: var(--display);
   font-variation-settings: 'opsz' 40;
   font-weight: 600;
-  font-size: 1.08rem;
+  font-size: 1.3rem;
   letter-spacing: -0.01em;
 }
 .inst { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.03em; color: var(--ink-soft); }
-.edu-note { color: var(--ink-soft); margin: 0.15rem 0 0; font-size: 0.9rem; line-height: 1.4; }
+.edu-note { color: var(--ink-soft); margin: 0.15rem 0 0; font-size: 0.97rem; line-height: 1.4; }
 .edu-note em { font-style: italic; }
 
 /* ============================== FOOTER =========================== */
