@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokémon Chronon — Raymond Amador</title>
+  <meta name="description" content="Pokémon Chronon: a story-first ROM hack of Pokémon Emerald set in Helvera, an alpine region where a company has begun selling the time itself. Built like software: generated maps, measured grammars, eighteen audits.">
+  <meta name="author" content="Raymond Amador">
+  <link rel="canonical" href="https://ramador.me/chronon/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pokémon Chronon">
+  <meta property="og:description" content="A story-first ROM hack of Pokémon Emerald, set in Helvera: lake towns, punctual trains, and a company selling the time itself.">
+  <meta property="og:url" content="https://ramador.me/chronon/">
+  <meta property="og:image" content="https://ramador.me/chronon/turicum.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ============================== TOP BAR ============================= -->
+  <header class="topbar">
+    <a class="wordmark" href="/" aria-label="Home — Raymond Amador">
+      <svg class="mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect class="frame" x="2" y="2" width="60" height="60" rx="10"/>
+        <line class="struct" x1="32" y1="16" x2="44" y2="34" stroke-width="2.4" stroke-linecap="round"/>
+        <line class="amber" x1="44" y1="34" x2="30" y2="50" stroke-width="2.4" stroke-linecap="round"/>
+        <circle class="struct" cx="32" cy="16" r="3"/>
+        <circle class="struct" cx="44" cy="34" r="4"/>
+        <circle class="amber" cx="30" cy="50" r="4"/>
+      </svg>
+    </a>
+    <nav class="contact" aria-label="Contact and profiles">
+      <a href="https://github.com/ramador09" aria-label="GitHub">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a id="email-link" href="#" aria-label="Email">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- =============================== PAGE ============================== -->
+  <main class="page">
+    <p class="eyebrow">Side Project &middot; In Development</p>
+    <h1>Pokémon Chronon</h1>
+    <p class="lead">
+      A story-first ROM hack of Pokémon Emerald, set in Helvera: an alpine
+      region of lake towns, funiculars and punctual trains, where a very old
+      and very polite company has begun selling the time itself.
+    </p>
+
+    <figure class="shot">
+      <img src="turicum.png" alt="Turicum, the largest city in Helvera, on the shore of Lake Turic" width="736" height="704">
+      <figcaption>TURICUM, the money city at the head of Lake Turic. The lake is
+      drawn as two shorelines rather than a shape; the city sits on the inside
+      of the bend, the way Zurich does.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>The premise</h2>
+      <p>
+        Helvera runs on rail time. Clocks are civic furniture, punctuality is a
+        moral position, and the player steps off the night train from Berolin
+        four minutes late through nobody&rsquo;s fault. The four minutes do not
+        come back. A survey company keeps turning up in villages that have
+        nothing worth surveying, the bells in the capital ring a little after
+        they should, and one clockmakers&rsquo; guild is quietly refusing to
+        adjust anything until someone explains what it would be adjusting
+        <em>to</em>.
+      </p>
+      <p>
+        Eight gyms, a wholly new region, and no borrowed maps: every town,
+        route, gym and interior is original geometry. Harder than the original
+        game, far gentler than the difficulty hacks, and written dry.
+      </p>
+
+      <h2>The region</h2>
+      <figure class="shot">
+        <img src="helvera.png" alt="The Helvera region map: a landlocked alpine region with a rail corridor of towns and the Alps across the south" width="768" height="480">
+        <figcaption>HELVERA in the Pokénav: landlocked, one rail spine, the Alps
+        across the south. The map art and the flight data are generated from
+        the same table, so they cannot disagree.</figcaption>
+      </figure>
+
+      <div class="shot-grid">
+        <figure class="shot">
+          <img src="sillwald.png" alt="The Sillwald forest map" width="640" height="800">
+          <figcaption>The SILLWALD, the first real dungeon: six switchback legs,
+          four clearings, a pond copied tile-for-tile from the games&rsquo; own
+          grammar.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="route-h01.png" alt="Route H-01, three meadow terraces with jump ledges" width="384" height="640">
+          <figcaption>ROUTE H-01: three meadow terraces with one-way jump
+          ledges. An audit proves no ledge is ever the only way between two
+          places.</figcaption>
+        </figure>
+      </div>
+
+      <h2>Built like software</h2>
+      <p>
+        No map in Helvera is drawn by hand in a map editor. Each one is a small
+        Python program, compiled through a single choke point where three
+        grammars run: trees, water banks and jump ledges, each one
+        <strong>measured from the original game&rsquo;s maps</strong> rather
+        than invented. Where the games always pair a tile, the compiler pairs
+        it; where they never leave a shore unbanked, neither can we.
+      </p>
+      <p>
+        Eighteen audits gate every commit. Gym puzzles are proved solvable by
+        exhausting their entire state space; soft-locks are hunted as graph
+        problems over the whole region at once; dialogue is measured in pixels
+        against the font&rsquo;s own width table. The documentation, including
+        the repository&rsquo;s README, is generated from source, so it cannot
+        go stale.
+      </p>
+
+      <div class="stats" role="list" aria-label="Project figures">
+        <div class="stat" role="listitem"><b>61</b><span>maps</span></div>
+        <div class="stat" role="listitem"><b>8</b><span>settlements</span></div>
+        <div class="stat" role="listitem"><b>4</b><span>gyms built</span></div>
+        <div class="stat" role="listitem"><b>49</b><span>trainers</span></div>
+        <div class="stat" role="listitem"><b>18</b><span>audits</span></div>
+      </div>
+      <p class="stats-note">Measured from the repository, August 2026. Four of
+      eight gyms built; the count moves.</p>
+
+      <h2>Where it stands</h2>
+      <p>
+        In development, most of the way through Act&nbsp;II. The source
+        repository goes public at the first release, in the decompilation
+        community&rsquo;s standing posture: source and patches only, nothing of
+        Nintendo&rsquo;s ever distributed, non-commercial permanently.
+      </p>
+    </div>
+
+    <p class="fineprint">
+      Pokémon Chronon is a fan work. Pokémon is &copy; Nintendo, Creatures Inc.
+      and GAME FREAK inc.; this project is not affiliated with or endorsed by
+      them. Screenshots show a work in progress.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p class="fineprint">&copy; 2026 Raymond Amador &middot; Zurich 🇨🇭 and Tbilisi 🇬🇪</p>
+  </footer>
+
+  <script>
+    (function () {
+      var user = "ray", domain = "ramador.me";
+      var a = document.getElementById("email-link");
+      if (a) { a.setAttribute("href", "mailto:" + user + "@" + domain); }
+    })();
+  </script>
+
+  <script data-goatcounter="https://ramador.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
