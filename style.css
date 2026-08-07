@@ -150,6 +150,19 @@ body {
   max-width: 26rem;
 }
 
+/* education under the bio: same vocabulary, quieter scale. In the narrow
+   identity column the full 1.3rem degree lines shouted; a hairline rule
+   separates it from the lead and the degrees drop half a step. */
+.edu-block {
+  border-top: 1px solid var(--hairline);
+  padding-top: 1.1rem;
+  margin-top: 0.3rem;
+}
+.edu-block .deg { font-size: 1.08rem; }
+.edu-block .inst { font-size: 0.68rem; }
+.edu-block .edu-note { font-size: 0.88rem; line-height: 1.45; }
+.edu-block .edu + .edu { margin-top: 0.7rem; }
+
 /* ---- detail (right): work + education ---- */
 .detail {
   display: flex;
