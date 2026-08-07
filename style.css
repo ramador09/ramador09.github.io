@@ -239,16 +239,23 @@ body {
 
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 1px; }
 
-/* a link inside the lead stays quiet: ink text, amber underline on rest */
+/* A link inside the lead carries NO underline at rest. The bio is four
+   equal fragments and an underline made the fourth one shout — it read as
+   the most important thing about the person, which it is not. The link
+   still exists; it just waits to be found. The underline returns on hover
+   so the affordance is there the moment a cursor is. */
 .lead a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-color: var(--accent);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
   transition: color .18s ease;
 }
-.lead a:hover, .lead a:focus-visible { color: var(--accent-text); }
+.lead a:hover, .lead a:focus-visible {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
 
 /* ======================= PROJECT PAGE (chronon) ==================== */
 /* A scrolling editorial column, unlike the single-screen home. Same voice:
